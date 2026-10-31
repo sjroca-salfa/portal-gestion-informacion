@@ -1,4 +1,4 @@
-# 04 · PORTAL GESTIÓN DE LA INFORMACIÓN
+# 05 · PORTAL GESTIÓN DE LA INFORMACIÓN
 Portal de consulta del modelo de gestión de la información de Salfa Montajes · Actualizado: 2026-10-30
 
 ## 1. Qué es
@@ -6,15 +6,15 @@ Página estática autocontenida (HTML, CSS y JS en un solo archivo, sin dependen
 
 ## 2. Estructura
 ```text
-04-portal-gestion-informacion/
+05-portal-gestion-informacion/
 ├── index.html   <- portal completo
 └── README.md    <- este documento
 ```
 
 ## 3. Despliegue
 - Repositorio independiente en la cuenta `sjroca-salfa`: `portal-gestion-informacion`.
-- Publicación: GitHub Pages desde `main`, raíz del repositorio. URL esperada: `https://sjroca-salfa.github.io/portal-gestion-informacion/`.
-- Se prueba en local con `http://localhost:5500` antes de cada push.
+- Publicación: GitHub Pages desde `main`, raíz del repositorio. URL oficial: `https://sjroca-salfa.github.io/portal-gestion-informacion/`.
+- Se prueba en local con `http://localhost:5500/05/` antes de cada push.
 
 ## 4. Configuración
 No requiere variables, secretos ni correos. No usa Apps Script ni Google Sheets.
