@@ -47,6 +47,17 @@
   30% { transform: scale(1); filter: drop-shadow(0 0 0 transparent) brightness(1); }
 }
 
+@media (max-width: 680px) {
+  .p5-tit, .p5-sep, #p5UserEmail, #topSaludoPortalP5 { display: none !important; }
+  .salfa-p5-badge { font-size: 10px; padding: 2px 6px; }
+  .chip-p5-online { font-size: 10.5px !important; padding: 2px 7px !important; }
+  .chip-sesion-tiempo { font-size: 10.5px !important; padding: 2px 7px !important; }
+  .salfa-topbar-p5 { padding: 4px 10px !important; }
+}
+@media (max-width: 480px) {
+  .salfa-p5-badge { display: none !important; }
+}
+
 /* Selector de Portales Universal (Modal) */
 .btn-selector-portales{
   display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;
@@ -1923,7 +1934,7 @@ window.addEventListener('resize', drawCor); drawCor();
       <div class="salfa-dd-divider"></div>
       <a href="https://sjroca-salfa.github.io/salfa-pilotos/02-portal-cv/" class="salfa-dd-item" data-p="02">
         <span class="salfa-dd-num">02</span>
-        <div class="salfa-dd-info"><b>Control de CV</b><span>Gestión de personas</span></div>
+        <div class="salfa-dd-info"><b>Control de CV y Competencias</b><span>Gestión de personas</span></div>
         <span class="salfa-dd-tag ok">Activo</span>
       </a>
       <div class="salfa-dd-item off">
