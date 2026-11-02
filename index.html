@@ -1,4 +1,4 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>
+<!doctype html><html lang="es"><head><script>window.SALFA_SHELL={id:"05",key:"info",titulo:"GESTIÓN DE LA INFORMACIÓN"};(function(){var h=location.hostname,l=(h==="localhost"||h==="127.0.0.1"||location.protocol==="file:");var u=l?"../00-portal-hub/shared/salfa-shell.js":"https://sjroca-salfa.github.io/salfa-pilotos/shared/salfa-shell.js";document.write("<script src=\""+u+"\"><\/script>");})();</script><meta charset="utf-8"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>
 /* Barra Superior Corporativa */
 .salfa-topbar-p5 {
   position: fixed; top: 0; left: 0; right: 0; height: 48px;
@@ -277,8 +277,8 @@
   var rawSession = localStorage.getItem('salfa_auth_session');
   var user = null;
   try { user = rawSession ? JSON.parse(rawSession) : null; } catch(e){}
-  var userEmail = (user && user.email) || 'sjroca@salfamontajes.com';
-  var userRol = (user && user.rol) || 'Administrador';
+  var userEmail = (user && user.email) || '';
+  var userRol = (user && user.rol) || 'Visualizador';
 
   
 // Selector de Portales Universal (Modal)
@@ -393,9 +393,9 @@ function latidoPresenciaP5(email){
       var presKey = 'salfa_presencia_mem_v1';
       var pres = {};
       try { pres = JSON.parse(localStorage.getItem(presKey)) || {}; } catch(e){}
-      var userMail = String(email || userEmail || 'sjroca@salfamontajes.com').toLowerCase();
-      var uNom = (user && user.nombre) || 'Sebastián';
-      var uRol = (user && user.rol) || userRol || 'Administrador';
+      var userMail = String(email || userEmail || '').toLowerCase();
+      var uNom = (user && user.nombre) || '';
+      var uRol = (user && user.rol) || userRol || 'Visualizador';
       var now = Date.now();
       
       pres[userMail + '|info'] = {

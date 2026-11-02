@@ -1,0 +1,8 @@
+
+
+# Entrega Seguridad Ola 1
+.clasp.json
+.clasprc.json
+_respaldo/
+*.zip
+node_modules/
